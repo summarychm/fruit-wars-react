@@ -1,11 +1,16 @@
 import React from "react";
-import styled from "styled-components";
 
-const loading = () => (
-  <div>
-    <div>LoadingMessage</div>
+const LoadingScreen = () => (
+  <div className="gamePlayer loadingScreen">
+    <div
+      className="loadingMessage"
+      style={{
+        background: `url(${require("../images/loader.gif")}) no-repeat center`
+      }}
+    >
+      LoadingMessage
+    </div>
   </div>
 );
-const LoadingScreen = styled(loading)``;
 
 export default LoadingScreen;

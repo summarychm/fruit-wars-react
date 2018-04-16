@@ -1,7 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const levelSelect = () => <div />;
-const LevelSelectScreen = styled(levelSelect)``;
+const LevelSelectScreen = () => (<div className="gamePlayer" >
+</div>);
 
 export default LevelSelectScreen;

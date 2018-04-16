@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 
 // 计分板面板
-const screen = () => (
-    <div>
+const ScoreScreen = () => {
+  return (
+    <div className="gamePlayer scoreScreen">
       <img src={require("../images/icons/sound.png")} alt="" />
       <img src={require("../images/icons/prev.png")} alt="" />
-      <span>Score:0</span>
+      <span className="score">Score:0</span>
     </div>
   );
-  const ScoreScreen = styled(screen)``;
+};
 
-  export default ScoreScreen;
+export default ScoreScreen;

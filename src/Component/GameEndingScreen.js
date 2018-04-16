@@ -1,8 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 
-const gameEnd = () => (
-  <div>
+const GameEndingScreen = () => (
+  <div className="gamePlayer">
     <div>
       <p>The Level Is Over Message</p>
       <p>
@@ -20,5 +19,4 @@ const gameEnd = () => (
     </div>
   </div>
 );
-const GameEndingScreen = styled(gameEnd)``;
 export default GameEndingScreen;

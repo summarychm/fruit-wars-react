@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import Canvas from "./Canvas";
 import ScoreScreen from "./ScoreScreen";
@@ -7,12 +6,18 @@ import GameStartScreen from "./GameStartScreen";
 import LevelSelectScreen from "./LevelSelectScreen";
 import LoadingScreen from "./LoadingScreen";
 import GameEndingScreen from "./GameEndingScreen";
+import "../index.css";
 
 export default class App extends React.Component {
   render() {
     return (
-      <div className="gameContainer">
-        <Canvas primary />
+      <div
+        className="gameContainer"
+        style={{
+          background: `url(${require("../images/splashscreen.png")})`
+        }}
+      >
+        <Canvas />
         {/* 计分板 ScoreScreen */}
         <ScoreScreen />
         {/* 开始菜单 GameStartScreen */}
@@ -27,3 +32,4 @@ export default class App extends React.Component {
     );
   }
 }
+// style={{ display: "block" }}

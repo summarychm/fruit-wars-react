@@ -3,3 +3,57 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.gameContainer {
+  width: 640px;
+  height: 480px;
+  border: 1px solid black;
+}
+/* 图层通用设置 */
+.gamePlayer {
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  display: none;
+}
+
+/* 计分板 */
+.scoreScreen {
+  height: 60px;
+  font: 32px Comic Sans MS;
+  text-shadow: 0 0 2px #000;
+  color: white;
+}
+.scoreScreen img {
+  opacity: 0.7;
+  top: 10px;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.scoreScreen .score {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+/*     开始菜单       */
+.gameStartScreen {
+  padding-top: 250px;
+  text-align: center;
+}
+.gameStartScreen img {
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*  进度条  */
+.loadingScreen {
+  background: rgba(100, 100, 100, 0.3);
+}
+.loadingScreen .loadingMessage {
+  margin-top: 400px;
+  text-align: center;
+  height: 48px;
+  color: white;
+  font: "12px 微软雅黑";
+}
